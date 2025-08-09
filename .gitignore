@@ -1,0 +1,42 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Директорії та файли середовища
+node_modules/
+.DS_Store
+dist/
+dist-ssr/
+coverage/
+*.local
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.suo
+*.user
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor (VSCode)
+.vscode/*
+!.vscode/extensions.json
+
+# TypeScript
+*.tsbuildinfo
+
+# ASP.NET Core
+bin/
+obj/
+appsettings.Development.json
