@@ -3,10 +3,10 @@
 <template>
   <div class="wrapper">
     <div>
-      <p>What`s happening?</p>
+      <p>What are you looking for ?</p>
       <div class="message-block">
         <input class="message" type="text" />
-        <button>Post</button>
+        <button>Find</button>
       </div>
     </div>
     <div class="content"></div>
@@ -42,7 +42,7 @@
   }
 
   button:hover {
-      color: aliceblue;
-      background-color: dimgrey;
+    color: aliceblue;
+    background-color: dimgrey;
   }
 </style>

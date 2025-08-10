@@ -3,25 +3,20 @@
   import { useRouter } from 'vue-router';
 
   const router = useRouter();
-
-  function OpenSettings() {
-    router.push('/settings');
-  }
-
 </script>
 
 <template>
   <div class="wrapper">
     <div class="main">
       <div class="tool_panel">
-        <div class="logo">
-          <img src="../public/hooli_icon.png" alt="" />
-        </div>
         <div class="buttons_panel">
-          <button class="explore-button">Explore</button>
-          <button class="bookmarks-button">Bookmarks</button>
-          <button class="profile-button" @click="OpenSettings">Profile</button>
-          <button class="about-button">About</button>
+          <button class="main_page-button" @click="router.push('/main')">
+            <img src="../public/hooli_icon.png" />
+          </button>
+          <button class="explore-button next_page-button" @click="router.push('/main/explore')">Explore</button>
+          <button class="bookmarks-button next_page-button" @click="router.push('/main/bookmarks')">Bookmarks</button>
+          <button class="profile-button next_page-button" @click="router.push('/main/profile')">Profile</button>
+          <button class="about-button next_page-button" @click="router.push('/main/aboutApp')">About</button>
         </div>
       </div>
       <div class="main_content">
@@ -39,13 +34,34 @@
     padding-left: 800px;
   }
 
+  .wrapper {
+    height: 100vh;
+  }
+
   .buttons_panel {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  button {
+  .main_page-button img {
+    width: 80px; 
+    height: 80px;
+  }
+
+  .main_page-button {
+    border: none;
+    width: 100px;
+    height: 85px;
+    border-radius: 50px;
+    background-color: transparent;
+  }
+
+  .main_page-button:hover {
+    background-color: lightgray;
+  }
+
+  .next_page-button {
     margin-top: 30px;
     width: fit-content;
     font-size: 20px;
@@ -55,11 +71,13 @@
     background-color: transparent;
   }
 
-  .content {
-      
+  .main_content {
+    border: 1px solid lightgray;
+    width: 500px;
+    border-radius: 5px;
   }
 
-  button:hover {
+  .next_page-button:hover {
     background-color: lightgray;
     transition: 80ms linear;
   }
