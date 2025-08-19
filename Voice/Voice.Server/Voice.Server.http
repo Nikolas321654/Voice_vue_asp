@@ -1,6 +1,0 @@
-@Voice.Server_HostAddress = http://localhost:5255
-
-GET {{Voice.Server_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

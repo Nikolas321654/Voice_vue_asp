@@ -6,8 +6,8 @@
 </script>
 
 <template>
-  <div class="wrapper">
-    <div class="main">
+  <div class="wrapper"> 
+    <div class="main"> 
       <div class="tool_panel">
         <div class="buttons_panel">
           <button class="main_page-button" @click="router.push('/main')">
@@ -22,7 +22,7 @@
       <div class="main_content">
         <router-view></router-view>
       </div>
-   </div>
+    </div>
   </div>
 </template>
 
@@ -31,11 +31,11 @@
     display: flex;
     flex-direction: row;
     height: 100%;
-    padding-left: 800px;
+    justify-content: center;
   }
 
   .wrapper {
-    height: 100vh;
+    height: 100%;
   }
 
   .buttons_panel {
